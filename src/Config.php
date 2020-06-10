@@ -261,11 +261,55 @@ class Config
       return Request::Request("/config/fetchmail/$id", null, "DELETE");
   }
   
+  /**
+    * List configured LDAP profiles.
+    * GET /api2/json/config/ldap
+  */
+  public function ldap()
+  {
+      return Request::Request("/config/ldap");
+  }
+  /**
+    * Add LDAP profile.
+    * POST /api2/json/config/ldap
+    * @param array()	$data
+  */
+  public function ldapAdd($data = array())
+  {
+      return Request::Request("/config/ldap", $data, "POST");
+  }
+  /**
+    * Directory index.
+    * GET /api2/json/config/ldap/{profile}
+    * @param string   $profile     Profile ID.
+  */
+  public function ldapInfo($profile)
+  {
+      return Request::Request("/config/ldap/$profile");
+  }
+  /**
+    * Delete an LDAP profile.
+    * DELETE /api2/json/config/ldap/{profile}
+    * @param string   $profile     Profile ID.
+  */
+  public function ldapDelete($profile)
+  {
+      return Request::Request("/config/ldap/$profile", null, "DELETE");
+  }
   
+  // GET /api2/json/config/ldap/{profile}/groups
   
-  // ldap
+  // GET /api2/json/config/ldap/{profile}/groups/{gid}
   
+  // GET /api2/json/config/ldap/{profile}/users
   
+  // GET /api2/json/config/ldap/{profile}/users/{email}
+  
+  // GET /api2/json/config/ldap/{profile}/config
+  
+  // PUT /api2/json/config/ldap/{profile}/config
+  
+  // POST /api2/json/config/ldap/{profile}/sync
   
   /**
     * List of trusted networks from where SMTP clients are allowed to relay mail through Proxmox Mail Gateway.
