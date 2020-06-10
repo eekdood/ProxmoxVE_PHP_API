@@ -360,7 +360,225 @@ class Config
   
     
   // ruledb
+  // GET /api2/json/config/ruledb
   
+  // POST /api2/json/config/ruledb
+  
+  // GET /api2/json/config/ruledb/action
+  
+  // POST /api2/json/config/ruledb/action/bcc
+  
+  // GET /api2/json/config/ruledb/action/bcc/{id}
+  
+  // PUT /api2/json/config/ruledb/action/bcc/{id}
+  
+  // POST /api2/json/config/ruledb/action/disclaimer
+  
+  // GET /api2/json/config/ruledb/action/disclaimer/{id}
+  
+  // PUT /api2/json/config/ruledb/action/disclaimer/{id}
+  
+  // POST /api2/json/config/ruledb/action/field
+  
+  // GET /api2/json/config/ruledb/action/field/{id}
+  
+  // PUT /api2/json/config/ruledb/action/field/{id}
+  
+  // POST /api2/json/config/ruledb/action/notification
+  
+  // GET /api2/json/config/ruledb/action/notification/{id}
+  
+  // PUT /api2/json/config/ruledb/action/notification/{id}
+  
+  // GET /api2/json/config/ruledb/action/objects
+  
+  // DELETE /api2/json/config/ruledb/action/objects/{id}
+  
+  // POST /api2/json/config/ruledb/action/removeattachments
+  
+  // GET /api2/json/config/ruledb/action/removeattachments/{id}
+  
+  // PUT /api2/json/config/ruledb/action/removeattachments/{id}
+  
+  // GET /api2/json/config/ruledb/rules
+  
+  // POST /api2/json/config/ruledb/rules
+  
+  // GET /api2/json/config/ruledb/rules/{id}
+  
+  // DELETE /api2/json/config/ruledb/rules/{id}
+  
+  // GET /api2/json/config/ruledb/rules/{id}/action
+  
+  // POST /api2/json/config/ruledb/rules/{id}/action
+  
+  // DELETE /api2/json/config/ruledb/rules/{id}/action/{ogroup}
+  
+  // GET /api2/json/config/ruledb/rules/{id}/from
+  
+  // POST /api2/json/config/ruledb/rules/{id}/from
+  
+  // DELETE /api2/json/config/ruledb/rules/{id}/from/{ogroup}
+  
+  // GET /api2/json/config/ruledb/rules/{id}/to
+  
+  // POST /api2/json/config/ruledb/rules/{id}/to
+  
+  // DELETE /api2/json/config/ruledb/rules/{id}/to/{ogroup}
+  
+  // GET /api2/json/config/ruledb/rules/{id}/what
+  
+  // POST /api2/json/config/ruledb/rules/{id}/what
+  
+  // DELETE /api2/json/config/ruledb/rules/{id}/what/{ogroup}
+  
+  // GET /api2/json/config/ruledb/rules/{id}/when
+  
+  // POST /api2/json/config/ruledb/rules/{id}/when
+  
+  // DELETE /api2/json/config/ruledb/rules/{id}/when/{ogroup}
+  
+  // GET /api2/json/config/ruledb/rules/{id}/config
+  
+  // GET /api2/json/config/ruledb/what
+  
+  // POST /api2/json/config/ruledb/what
+  
+  // GET /api2/json/config/ruledb/what/{ogroup}
+  
+  // DELETE /api2/json/config/ruledb/what/{ogroup}
+  
+  // POST /api2/json/config/ruledb/what/{ogroup}/archivefilenamefilter
+  
+  // GET /api2/json/config/ruledb/what/{ogroup}/archivefilenamefilter/{id}
+  
+  // PUT /api2/json/config/ruledb/what/{ogroup}/archivefilenamefilter/{id}
+  
+  // POST /api2/json/config/ruledb/what/{ogroup}/archivefilter
+  
+  // GET /api2/json/config/ruledb/what/{ogroup}/archivefilter/{id}
+  
+  // PUT /api2/json/config/ruledb/what/{ogroup}/archivefilter/{id}
+  
+  // POST /api2/json/config/ruledb/what/{ogroup}/contenttype
+  
+  // GET /api2/json/config/ruledb/what/{ogroup}/contenttype/{id}
+  
+  // PUT /api2/json/config/ruledb/what/{ogroup}/contenttype/{id}
+  
+  // POST /api2/json/config/ruledb/what/{ogroup}/filenamefilter
+  
+  // GET /api2/json/config/ruledb/what/{ogroup}/filenamefilter/{id}
+  
+  // PUT /api2/json/config/ruledb/what/{ogroup}/filenamefilter/{id}
+  
+  // POST /api2/json/config/ruledb/what/{ogroup}/matchfield
+  
+  // GET /api2/json/config/ruledb/what/{ogroup}/matchfield/{id}
+  
+  // PUT /api2/json/config/ruledb/what/{ogroup}/matchfield/{id}
+  
+  // GET /api2/json/config/ruledb/what/{ogroup}/objects
+  
+  // DELETE /api2/json/config/ruledb/what/{ogroup}/objects/{id}
+  
+  // POST /api2/json/config/ruledb/what/{ogroup}/spamfilter
+  
+  // GET /api2/json/config/ruledb/what/{ogroup}/spamfilter/{id}
+  
+  // PUT /api2/json/config/ruledb/what/{ogroup}/spamfilter/{id}
+  
+  // POST /api2/json/config/ruledb/what/{ogroup}/virusfilter
+  
+  // GET /api2/json/config/ruledb/what/{ogroup}/virusfilter/{id}
+  
+  // PUT /api2/json/config/ruledb/what/{ogroup}/virusfilter/{id}
+  
+  // GET /api2/json/config/ruledb/what/{ogroup}/config
+  
+  // PUT /api2/json/config/ruledb/what/{ogroup}/config
+  
+  // GET /api2/json/config/ruledb/when
+  
+  // POST /api2/json/config/ruledb/when
+  
+  // GET /api2/json/config/ruledb/when/{ogroup}
+  
+  // DELETE /api2/json/config/ruledb/when/{ogroup}
+  
+  // GET /api2/json/config/ruledb/when/{ogroup}/objects
+  
+  // DELETE /api2/json/config/ruledb/when/{ogroup}/objects/{id}
+  
+  // POST /api2/json/config/ruledb/when/{ogroup}/timeframe
+  
+  // GET /api2/json/config/ruledb/when/{ogroup}/timeframe/{id}
+  
+  // PUT /api2/json/config/ruledb/when/{ogroup}/timeframe/{id}
+  
+  // GET /api2/json/config/ruledb/when/{ogroup}/config
+  
+  // PUT /api2/json/config/ruledb/when/{ogroup}/config
+  
+  // GET /api2/json/config/ruledb/who
+  
+  // POST /api2/json/config/ruledb/who
+  
+  // GET /api2/json/config/ruledb/who/{ogroup}
+  
+  // DELETE /api2/json/config/ruledb/who/{ogroup}
+  
+  // POST /api2/json/config/ruledb/who/{ogroup}/domain
+  
+  // GET /api2/json/config/ruledb/who/{ogroup}/domain/{id}
+  
+  // PUT /api2/json/config/ruledb/who/{ogroup}/domain/{id}
+  
+  // POST /api2/json/config/ruledb/who/{ogroup}/email
+  
+  // GET /api2/json/config/ruledb/who/{ogroup}/email/{id}
+  
+  // PUT /api2/json/config/ruledb/who/{ogroup}/email/{id}
+  
+  // POST /api2/json/config/ruledb/who/{ogroup}/ip
+  
+  // GET /api2/json/config/ruledb/who/{ogroup}/ip/{id}
+  
+  // PUT /api2/json/config/ruledb/who/{ogroup}/ip/{id}
+  
+  // POST /api2/json/config/ruledb/who/{ogroup}/ldap
+  
+  // GET /api2/json/config/ruledb/who/{ogroup}/ldap/{id}
+  
+  // PUT /api2/json/config/ruledb/who/{ogroup}/ldap/{id}
+  
+  // POST /api2/json/config/ruledb/who/{ogroup}/ldapuser
+  
+  // GET /api2/json/config/ruledb/who/{ogroup}/ldapuser/{id}
+  
+  // PUT /api2/json/config/ruledb/who/{ogroup}/ldapuser/{id}
+  
+  // POST /api2/json/config/ruledb/who/{ogroup}/network
+  
+  // GET /api2/json/config/ruledb/who/{ogroup}/network/{id}
+  
+  // PUT /api2/json/config/ruledb/who/{ogroup}/network/{id}
+  
+  // GET /api2/json/config/ruledb/who/{ogroup}/objects
+  
+  // DELETE /api2/json/config/ruledb/who/{ogroup}/objects/{id}
+  
+  // POST /api2/json/config/ruledb/who/{ogroup}/regex
+  
+  // GET /api2/json/config/ruledb/who/{ogroup}/regex/{id}
+  
+  // PUT /api2/json/config/ruledb/who/{ogroup}/regex/{id}
+  
+  // GET /api2/json/config/ruledb/who/{ogroup}/config
+  
+  // PUT /api2/json/config/ruledb/who/{ogroup}/config
+  
+  // GET /api2/json/config/ruledb/digest
   
   
   /**
